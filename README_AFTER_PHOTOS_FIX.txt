@@ -1,0 +1,1 @@
+Upload index.html to replace the existing file. Also upload James-Casserly-Portfolio-2025.pdf so the Download PDF Portfolio button works. If DNS is not set up yet, delete the CNAME file or clear the custom domain in GitHub Pages settings.
