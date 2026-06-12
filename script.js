@@ -1,4 +1,3 @@
-
 const navToggle = document.querySelector('[data-nav-toggle]');
 const nav = document.querySelector('[data-nav]');
 if (navToggle && nav) {
@@ -13,16 +12,3 @@ if (navToggle && nav) {
     navToggle.setAttribute('aria-expanded', 'false');
   }));
 }
-
-const filters = document.querySelectorAll('[data-filter]');
-const projectCards = document.querySelectorAll('[data-project-grid] .project-card');
-filters.forEach((button) => {
-  button.addEventListener('click', () => {
-    const filter = button.dataset.filter;
-    filters.forEach((btn) => btn.classList.toggle('active', btn === button));
-    projectCards.forEach((card) => {
-      const match = filter === 'All' || card.dataset.category === filter;
-      card.classList.toggle('is-hidden', !match);
-    });
-  });
-});
