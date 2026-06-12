@@ -26,15 +26,3 @@ filters.forEach((button) => {
     });
   });
 });
-
-// Open a project's details automatically when linking to its hash.
-function openHashDetails() {
-  const id = window.location.hash.replace('#','');
-  if (!id) return;
-  const target = document.getElementById(id);
-  if (!target) return;
-  const details = target.querySelector('details');
-  if (details) details.open = true;
-}
-window.addEventListener('hashchange', openHashDetails);
-openHashDetails();

@@ -84,11 +84,11 @@ h4{font-size:1rem;text-transform:uppercase;letter-spacing:.08em;color:var(--mute
 .project-card .eyebrow{font-weight:800;color:#383530;margin-top:-.2rem}
 .tags{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:auto}
 .tags span{font-size:.75rem;font-weight:850;border:1px solid var(--line);background:#faf8f2;border-radius:999px;padding:.4rem .58rem;color:#45413b}
-details{margin-top:.25rem;border-top:1px solid var(--line);padding-top:.75rem}
-summary{cursor:pointer;font-weight:900;color:var(--accent-dark);list-style:none;display:flex;align-items:center;justify-content:space-between;gap:1rem}
-summary::-webkit-details-marker{display:none}
-summary::after{content:'+';display:inline-grid;place-items:center;width:24px;height:24px;border:1px solid var(--line);border-radius:50%;color:var(--ink)}
-details[open] summary::after{content:'–'}
+.all-projects-heading{display:block;margin-bottom:1.25rem}
+.all-projects-heading h2{font-size:clamp(3.1rem,8vw,6.25rem);line-height:.9;max-width:none}
+.project-details{margin-top:.25rem;border-top:1px solid var(--line);padding-top:.75rem}
+.project-details-title{font-weight:900;color:var(--accent-dark);letter-spacing:.01em;margin-bottom:.2rem}
+
 .detail-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:1rem;padding-top:1rem}
 .detail-grid ul{margin:.5rem 0 0;padding-left:1.1rem;color:var(--muted)}
 .detail-grid li+li{margin-top:.4rem}
