@@ -92,8 +92,9 @@ h4{font-size:1rem;text-transform:uppercase;letter-spacing:.08em;color:var(--mute
 .detail-grid ul{margin:.5rem 0 0;padding-left:1.1rem;color:var(--muted)}
 .detail-grid li+li{margin-top:.4rem}
 .gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem;margin-top:1rem}
-.gallery a{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#f2eee7}
-.gallery img{width:100%;aspect-ratio:1.3/1;object-fit:cover}
+.gallery a{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#f8f5ef;display:grid;place-items:center}
+.gallery a:only-child{grid-column:1 / -1}
+.gallery img{width:100%;aspect-ratio:1.3/1;object-fit:contain;background:#f8f5ef}
 
 .process-section{border-top:1px solid var(--line)}
 .process-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
